@@ -5,8 +5,13 @@ import {Link} from 'react-router-dom';
 
 export default function Erreur() {
     return (
-        <div>
-            hello from erreur
-        </div>
+       <>
+       <Hero>
+           <Banner title='404' subtitle="Page introuvable">
+               <Link to="/" className="btn-Apropos">Retourner à l'accueil</Link>
+           </Banner>
+       </Hero>
+       </>
+
     )
 }

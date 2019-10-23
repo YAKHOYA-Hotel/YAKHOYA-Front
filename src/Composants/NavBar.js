@@ -3,6 +3,8 @@ import logo from '../images/logo.png';
 import {FaAlignRight} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 
+
+
 export default class NavBar extends Component {
     state={
        isOpen:false 
@@ -16,7 +18,7 @@ export default class NavBar extends Component {
                 <div className="nav-center">
                    <div className="nav-header">
                      <Link to="/">
-                      <img src={logo} alt="YAKHOUYA"  width='200px'  />  
+                      <img src={logo} alt="YAKHOUYA"  width='155px'  />  
                      </Link>
 
                      <button className="nav-btn" type="button" onClick={this.handleToggle}>

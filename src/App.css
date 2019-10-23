@@ -9,6 +9,7 @@
   --THNavBar:#f6ac56;
   --BackNavBar:#010111;
   --IconNavBar:#ffffff;
+  --iconService:#815b13;
  
 
   --primaryColor: #af9a7d;
@@ -134,7 +135,7 @@ h6 {
   color: var(--TextNavBar);
   transition: var(--mainTransition);
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: var(--mainSpacing);
 }
@@ -175,8 +176,8 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
-  min-height: 60vh;
+  background-image: url("./images/logo.png");
+  min-height: 30vh;
 }
 /* End of Hero */
 /* Banner */
@@ -222,7 +223,7 @@ h6 {
 /* Title */
 .section-title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .section-title h4 {
   font-size: 2rem;
@@ -231,10 +232,10 @@ h6 {
   margin-bottom: 1rem;
 }
 .section-title div {
-  width: 5rem;
+  width: 15rem;
   height: 5px;
   margin: 0 auto;
-  background: var(--primaryColor);
+  background: var(--BackNavBar);
 }
 /* end of Title */
 
@@ -256,15 +257,17 @@ h6 {
 }
 .service span {
   display: inline-block;
-  color: var(--primaryColor);
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  color: var(--iconService);
+  font-size: 3rem;
+  margin-bottom: 0rem;
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+  color: var(--iconService);
 }
 .services p {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 @media screen and (min-width: 992px) {

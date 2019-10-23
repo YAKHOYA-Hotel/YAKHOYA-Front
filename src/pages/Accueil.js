@@ -3,6 +3,7 @@ import Hero from '../Composants/Hero';
 import Recherche from '../Composants/Recherche';
 import Banner from '../Composants/Banner';
 import {Link} from 'react-router-dom';
+import Services from '../Composants/Services';
 
 
 export default function Accueil() {
@@ -16,6 +17,7 @@ export default function Accueil() {
             </Banner> 
         </Hero>
         <Recherche />
+        <Services/>
         </>
     )
 }
