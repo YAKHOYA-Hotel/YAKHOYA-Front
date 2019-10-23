@@ -3,7 +3,7 @@ import Hero from '../Composants/Hero'
 
 const ListeHotels = () => {
     return (
-        <Hero/>
+        <Hero hero="roomsHero"/>
     )
 }
 
