@@ -16,7 +16,7 @@ export default class Services extends Component {
         {
             icon:<FaWheelchair/>,
             title: 'P.M.R.',
-            info:'Logement entièrement accessible en fauteuil roulant, situé au rez-de-chaussée.'
+            info:'Logements entièrement accessibles en fauteuil roulant, situés au rez-de-chaussée.'
         },
         {
             icon:<FaParking/>,
@@ -41,7 +41,7 @@ export default class Services extends Component {
         {
             icon:<FaTv/>,
             title: 'Télévision ',
-            info:"Toute nos chambres sont équipées d'une télé à ecran plat."
+            info:"Toutes nos chambres sont équipées d'une télé à ecran plat."
         },
         {
             icon:<FaPlaystation/>,
@@ -51,7 +51,7 @@ export default class Services extends Component {
         {
             icon:<FaSmokingBan/>,
             title: 'Non-fumeurs',
-            info:'Toutes nos chambre sont non-fumeurs.'
+            info:'Toutes nos chambres sont non-fumeurs.'
         }
     ]
 }
