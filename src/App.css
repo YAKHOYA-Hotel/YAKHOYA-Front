@@ -176,8 +176,8 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/logo.png");
-  min-height: 30vh;
+  background-image: url("./images/defaultBcg.jpeg");
+  min-height: 67vh;
 }
 /* End of Hero */
 /* Banner */
@@ -289,22 +289,22 @@ h6 {
   padding: 5rem 0;
 }
 .featured-rooms-center {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  display: ruby;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   grid-row-gap: 2rem;
-  grid-column-gap: 40px;
+  grid-column-gap: 50px;
 }
 @media screen and (min-width: 776px) {
   .featured-rooms-center {
-    width: 90vw;
+    width: 50vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
   .featured-rooms-center {
-    width: 95vw;
+    width: 40vw;
     max-width: 1170px;
   }
 }
@@ -546,6 +546,7 @@ h6 {
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
+  margin-bottom: 3rem;
 }
 .btn-Apropos:hover {
   background: transparent;
