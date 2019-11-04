@@ -9,7 +9,7 @@
   --THNavBar:#f6ac56;
   --BackNavBar:#010111;
   --IconNavBar:#ffffff;
-  --iconService:#a36d07;
+  --iconService:#815b13;
  
 
   --primaryColor: #af9a7d;
@@ -265,7 +265,6 @@ h6 {
 }
 .service span:hover{
   transform:translateY(-3%);
-  color: var(--BackNavBar);
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
