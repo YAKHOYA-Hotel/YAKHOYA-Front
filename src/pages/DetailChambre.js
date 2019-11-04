@@ -4,7 +4,7 @@ export default class DetailChambre extends Component {
     render() {
         return (
             <div>
-                detail chambre
+                detail chambre salut pascal :) 
             </div>
         )
     }
