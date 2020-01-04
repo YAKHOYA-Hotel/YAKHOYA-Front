@@ -122,11 +122,7 @@ export default [
                         },
                },
 
-               {
-                image: {
-                         url: s10
-                        },
-               },
+               
 
                
               ],
@@ -217,11 +213,7 @@ export default [
                        },
               },
 
-              {
-               image: {
-                        url: d10
-                       },
-              },
+              
 
               
         ],
@@ -311,11 +303,7 @@ export default [
                        },
               },
 
-              {
-               image: {
-                        url: f10
-                       },
-              },
+              
 
               
     ],
@@ -406,11 +394,7 @@ export default [
                      },
             },
 
-            {
-             image: {
-                      url: p10
-                     },
-            },
+            
 
             
     ],

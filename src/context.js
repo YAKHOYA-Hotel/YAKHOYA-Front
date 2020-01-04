@@ -11,7 +11,7 @@ export default class ChambreProvider extends Component {
       loading:true
 
     };
-
+// Ajout du composant didmounth pour recuperer les données
     componentDidMount(){
         let chambre = this.formatData(items);
         this.setState({
@@ -28,11 +28,21 @@ export default class ChambreProvider extends Component {
            return chambre;
         });
         return tempItems
-
     }
+    
+    getRoom = (slug) => {
+        let tempChambres = [...this.state.chambres];
+        const chambre = tempChambres.find(room => room.slug === slug);
+        return chambre;
+      };
+
+
+
+
+
     render() {
         return (
-            <ChambreContext.Provider value={{...this.state}}>
+            <ChambreContext.Provider value={{...this.state, getRoom:this.getRoom}}>
                {this.props.children} 
             </ChambreContext.Provider>
         )
