@@ -6,11 +6,14 @@ import * as serviceWorker from './serviceWorker';
 
 
 import {BrowserRouter as Router} from 'react-router-dom';
+import {ChambreProvider} from './context';
 
 ReactDOM.render(
+<ChambreProvider>
 <Router>  
 <App />
-</Router>  
+</Router> 
+</ChambreProvider> 
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

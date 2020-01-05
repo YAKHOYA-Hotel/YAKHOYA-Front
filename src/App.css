@@ -18,6 +18,7 @@
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
+  --darkGreyy:rgb(243, 243, 243)f;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -141,6 +142,7 @@ h6 {
 }
 .nav-links a:hover {
   color: var(--THNavBar);
+  transform: translateY(-10%);
 }
 
 .show-nav {
@@ -169,15 +171,24 @@ h6 {
 /* Hero */
 .defaultHero,
 .roomsHero {
-  min-height: calc(75vh - 66px);
+  min-height: calc(100vh - 66px);
   background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/logo.png");
-  min-height: 30vh;
+  background-image: url("./images/defaultBcg.jpeg");
+  min-height: 67vh;
+}
+
+.chambreHero{
+  min-height: 40vh;
+  background: url("./images/defaultBcg1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 /* End of Hero */
 /* Banner */
@@ -261,6 +272,9 @@ h6 {
   font-size: 3rem;
   margin-bottom: 0rem;
 }
+.service span:hover{
+  transform:translateY(-3%);
+}
 .services h6 {
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
@@ -270,6 +284,8 @@ h6 {
   width: 95%;
   margin: 0 auto;
 }
+
+
 @media screen and (min-width: 992px) {
   .services-center {
     width: 95vw;
@@ -286,26 +302,28 @@ h6 {
 /* featured rooms */
 
 .featured-rooms {
-  padding: 5rem 0;
+  padding: 2rem 0;
+  text-align: center;
+  background: var(--darkGreyy);
 }
 .featured-rooms-center {
-  width: 80vw;
-  margin: 0 auto;
+  width: 90%;
+  margin: 3rem auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17.5, 1fr));
   grid-row-gap: 2rem;
-  grid-column-gap: 40px;
+  grid-column-gap: 2rem;
 }
-@media screen and (min-width: 776px) {
+@media screen and (min-width: 576px) {
   .featured-rooms-center {
-    width: 90vw;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(20.5rem, 1fr));
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1500px) {
   .featured-rooms-center {
-    width: 95vw;
-    max-width: 1170px;
+    width: 100%;
+    max-width: 1600px;
   }
 }
 /* end pf featured rooms */
@@ -376,14 +394,15 @@ h6 {
 
 .single-room {
   padding: 5rem 0 0 0;
+  
 }
 .single-room-images {
   width: 80vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-row-gap:0.5rem;
+  grid-column-gap: 5px;
 }
 .single-room-images img {
   width: 100%;
@@ -546,6 +565,7 @@ h6 {
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
+  margin-bottom: 3rem;
 }
 .btn-Apropos:hover {
   background: transparent;
