@@ -15,7 +15,7 @@ export default function Accueil() {
             title="YAKHOUYA Hôtels, Paris"
             subtitle="Chambres simple, double et familiale à partir de 180 €" >
                 
-           <Link to="/Apropos" className="btn-Apropos">Qui somme nous ?</Link>
+           <Link to="/Apropos" className="btn-Apropos">Qui sommes-nous ?</Link>
           
            
             

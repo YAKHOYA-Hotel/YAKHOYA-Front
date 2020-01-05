@@ -394,11 +394,12 @@ h6 {
 
 .single-room {
   padding: 5rem 0 0 0;
+  align-items: center;
   
 }
 .single-room-images {
-  width: 80vw;
-  margin: 0 auto;
+  width: 90vw;
+  margin: 5px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-row-gap:0.5rem;
@@ -416,7 +417,7 @@ h6 {
 }
 .desc,
 .info {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 .desc h3 {
   text-transform: capitalize;
@@ -570,4 +571,174 @@ h6 {
 .btn-Apropos:hover {
   background: transparent;
   color: var(--primaryColor);
+}
+
+.btn-Compte {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+.btn-Compte:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+
+
+
+
+h1 {
+  text-align: center;
+  width: 100%;
+  color: rgb(218, 123, 0);
+  font-weight: lighter;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+
+.yakhouya-title{
+color: #d37000
+}
+
+.yakhouya-chambre{
+  color: #021038
+  }
+  .yakhouya-resto{
+    color: #000000
+    }
+.img-apropos{
+  margin-top: 3rem;
+}
+
+label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+input::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.nom {
+  margin-right: 1%;
+}
+
+.prenom {
+  margin-left: 1%;
+}
+
+.email {
+  margin-right: 1%;
+}
+
+.emailC {
+  margin-left: 1%;
+}
+
+.password {
+  margin-right: 1%;
+}
+
+.passwordC {
+  margin-left: 1%;
+}
+
+.firstName,
+.lastName,
+.phone,
+.adresse,
+.ville,
+.codeP,
+.email,
+.emailC,
+.password,
+.passwordC {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.firstName,
+.lastName {
+  width: 49%;
+}
+
+.email,
+.emailC {
+  width: 49%;
+}
+
+.password,
+.passwordC {
+  width: 49%;
+}
+
+.createAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createAccount button {
+  background-color: #000000;
+  color: rgb(240, 129, 3);
+  border: 2px solid #ffffff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+.createAccount button:hover {
+  color: #fcfcfc;
+  background-color: #f8db7b;
+ 
+}
+
+.createAccount small {
+  color: #999999;
+  font-weight: lighter;
+}
+
+
+.Compte {
+  width: 40vw;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: auto;
+    margin-right: auto;
+  
 }
