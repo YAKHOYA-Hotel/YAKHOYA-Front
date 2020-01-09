@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import items from './data';
+import itemsH from './dataH';
 
 const ChambreContext = React.createContext();
 
@@ -16,6 +17,7 @@ export default class ChambreProvider extends Component {
         let chambre = this.formatData(items);
         this.setState({
             chambres:chambre,
+            hotels:itemsH,
             loading:false
         });
     };
@@ -28,7 +30,9 @@ export default class ChambreProvider extends Component {
            return chambre;
         });
         return tempItems
-    }
+    };
+
+
     
     getRoom = (slug) => {
         let tempChambres = [...this.state.chambres];
@@ -36,13 +40,21 @@ export default class ChambreProvider extends Component {
         return chambre;
       };
 
-
+    getHotel = (slug) =>{
+        let tempHotels = [...this.state.hotels];
+        const hotel = tempHotels.find(hotel=>hotel.slug===slug);
+        return hotel;
+    };
 
 
 
     render() {
         return (
-            <ChambreContext.Provider value={{...this.state, getRoom:this.getRoom}}>
+            <ChambreContext.Provider value={{
+                ...this.state, 
+                getRoom:this.getRoom,
+                getHotel:this.getHotel}}>
+
                {this.props.children} 
             </ChambreContext.Provider>
         )
@@ -50,4 +62,4 @@ export default class ChambreProvider extends Component {
 }
 
 const ChambreConsumer = ChambreContext.Consumer;
-export {ChambreConsumer,ChambreProvider,ChambreContext};
+export {ChambreProvider,ChambreConsumer,ChambreContext};
