@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import "../../src/App.css";
 import {Link} from 'react-router-dom';
+import Hero from "../Composants/Hero";
 
 
 const emailRegex = RegExp(
@@ -77,20 +78,23 @@ export default class RecupPass extends Component {
         const { formErrors } = this.state;
     
         return (
-          <div className="wrapper">
+      
+          <section className="Compte">
+           <div className="wrapper">
             <div className="form-wrapper">
 
 
              <div className="col-md-12">
               <form onSubmit={this.handleSubmit} noValidate>
-               <h1 className="h1">Récuperer votre mot de passe</h1>
+               
+               <h1>Récuperer votre mot de passe</h1>
                 
 
                 <div className="createAccount">
                 
                 <div className="email">
-                 
-                  <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email</label>
+                  
                   <input
                     
                     placeholder="Email"
@@ -108,7 +112,7 @@ export default class RecupPass extends Component {
                   
                 <div className="col-md-4">
                 <Link to='/Accueil'>
-                <button className="submit"> Envoyer </button>
+                <button className="submit" className="MyButtom"> Envoyer </button>
                 </Link>
                 </div>
                 </div>
@@ -119,6 +123,8 @@ export default class RecupPass extends Component {
               </div>
             </div>
           </div>
+          </section>
+         
         );
       }
 }

@@ -48,6 +48,10 @@ export default class Apropos extends Component {
                       
                     </section>
 
+
+
+
+
                     <section className="room-extras">
                     <div className="single-room-images">
 
@@ -77,6 +81,9 @@ export default class Apropos extends Component {
                        </article>
 
                     </section> 
+
+
+
 
 
 

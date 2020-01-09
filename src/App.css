@@ -140,9 +140,69 @@ h6 {
   font-weight: 500;
   letter-spacing: var(--mainSpacing);
 }
+.links-sociale {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+}
+
+.links-sociale a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: var(--TextNavBar);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: var(--mainSpacing);
+}
+
+.sociale{
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+
+.facebook{
+  color: #ffffff;
+  margin-right: 0.5em;
+  font-size: 1.2rem;
+}
+.facebook:hover {
+  transform: translateY(-10%);
+  color: var(--THNavBar);
+  
+}
+
+.instagram{
+  color: #ffffff;
+  margin-right: 0.5em;
+  font-size: 1.2rem;
+}
+.instagram:hover {
+  transform: translateY(-5%);
+  color: var(--THNavBar);
+}
+
+.twitter{
+  color: #ffffff;
+  margin-right: 0.5em;
+  font-size: 1.2rem;
+}
+.twitter:hover {
+  transform: translateY(-5%);
+  color: var(--THNavBar);
+}
+
+
+
 .nav-links a:hover {
   color: var(--THNavBar);
-  transform: translateY(-10%);
+  transform: translateY(-5%);
 }
 
 .show-nav {
@@ -600,8 +660,9 @@ h1 {
   width: 100%;
   color: rgb(218, 123, 0);
   font-weight: lighter;
-  margin-top: 50px;
+  margin-top: 40px;
   text-transform: capitalize;
+  font-size: inherit;
 }
 
 .yakhouya-title{
@@ -609,14 +670,62 @@ color: #d37000
 }
 
 .yakhouya-chambre{
-  color: #021038
+  color: #d37000
   }
   .yakhouya-resto{
-    color: #000000
+    color: #d37000
     }
 .img-apropos{
   margin-top: 3rem;
 }
+
+.yakhouya-title-Y{
+  text-align: center;
+  color: #000000;
+  background-color: #d37000;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+  text-transform: capitalize;
+  
+  }
+
+  .yakhouya-title-H{
+    text-align: center;
+    color: #d37000;
+    margin-bottom: 0rem;
+    font-size: 15px;
+    font-family: cursive;
+    
+    
+    }
+
+    .yakhouya-title-A{
+      text-align: center;
+      color: #000000;
+      margin-bottom: 0rem;
+      
+      
+      
+      
+      }
+      .yakhouya-title-P{
+        text-align: center;
+        color: #000000;
+        margin-bottom: 0rem;
+        
+        
+        }
+        .yakhouya-title-L{
+          text-align: center;
+          color: #3111a5;
+          margin-bottom: 0rem;
+          margin-top: 0rem;
+          font-size: 11px;
+          font-style: italic;
+          
+          
+          }
+
 
 label {
   font-size: 0.8em;
@@ -710,12 +819,12 @@ input.error {
 }
 
 .createAccount button {
-  background-color: #000000;
-  color: rgb(240, 129, 3);
+  background-color: #c35e00;
+  color: rgb(255, 255, 255);
   border: 2px solid #ffffff;
   width: 100%;
   margin-top: 1em;
-  padding: 8px 0px;
+  padding: 8px 50px;
   font-size: 1em;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -724,7 +833,7 @@ input.error {
 
 .createAccount button:hover {
   color: #fcfcfc;
-  background-color: #f8db7b;
+  background-color: #ffb43b;
  
 }
 
@@ -740,5 +849,52 @@ input.error {
   vertical-align: middle;
   margin-left: auto;
     margin-right: auto;
+  
+}
+
+.small-connexion{
+  color:#3b0606
+}
+
+.map-large{
+  
+  width: 99%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.5, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  
+ }
+
+ .map-large:hover{
+  box-shadow: var(--darkShadow);
+ }
+
+.map-large-m{
+  width: 100%;
+  height: 88vh ;
+ }
+  
+
+
+
+
+.map-link{
+  width: 100%;
+  margin: 0.5rem auto;
+  
+ 
+  
+}
+.map-link-p{
+  background: rgb(255, 255, 255);
+  color: rgb(238, 135, 0);
+  text-transform: capitalize;
+  padding: 0.1rem 0;
+  text-align: center;
+  font-weight: 1000;
   
 }

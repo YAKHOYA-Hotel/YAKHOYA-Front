@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import { login } from '../Functions/UserFunctions'
+import { login } from '../Functions/UserFunctions';
+import MyButtom from '../Composants/MyButtom'
+import MyButton from '../Composants/MyButtom';
+import StyledHero from "../Composants/StyledHero"
+import Hero from "../Composants/Hero"
+import defaultBcg from "../images/defaultBcg.jpeg"
 
 
 export default class Connexion extends Component {
@@ -42,11 +47,13 @@ export default class Connexion extends Component {
 
     render () {
         return (
+            
+            <section className="Compte">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate onSubmit={this.onSubmit}>
-                            <h1 className="h3 mb-5 font-weight-normal">Connectez vous</h1>
+                            <h1 className="h1">Connectez vous</h1>
 
 
 
@@ -74,15 +81,16 @@ export default class Connexion extends Component {
                               {/*<button type="submit">Authentification</button>*/}
 
                                 <Link to="/Accueil">
-                                <button type="submit">Authentification</button>
+                                <button type="submit" className="MyButtom">Authentification</button>
                                 </Link>
                                 
-                                <Link to="/RecupPass">
-                                Mot de pass oublié ?
+                                
+                                <Link to="/RecupPass" className="small-connexion">
+                                <small className="small-connexion">Mot de pass oublié ?</small>
                                 </Link>
 
-                                <Link to="/CreerCompte">
-                                Créer un Compte
+                                <Link to="/CreerCompte" className="small-connexion">
+                                <small className="small-connexion">Créer un Compte</small>
                                 </Link>
 
                             </div>
@@ -90,6 +98,8 @@ export default class Connexion extends Component {
                     </div>
                 </div>
             </div>
+            </section>
+           
         )
     }
 

@@ -7,6 +7,8 @@ import Services from '../Composants/Services';
 import TypeChambre from '../Composants/TypeChambre';
 
 
+
+
 export default function Accueil() {
     return (
         <>
@@ -23,8 +25,10 @@ export default function Accueil() {
 
             
         </Hero>
-        
+    
         <TypeChambre/>
+        
+        
         <Services/>
         </>
     )

@@ -12,6 +12,7 @@ import DetailChambre from './pages/DetailChambre';
 import Connexion from './pages/Connexion';
 import CreerCompte from './pages/CreerCompte';
 import RecupPass from './pages/RecupPass';
+import Map from './pages/Map';
 
 
 import NavBar from './Composants/NavBar';
@@ -32,6 +33,7 @@ function App() {
     <Route exact path="/ListeHotels"  component={ListeHotels}/>
     <Route exact path="/ListeHotels/:slug"  component={Hotel}/>
     <Route exact path="/Apropos"  component={Apropos}/>
+    <Route exact path="/Map"  component={Map}/>
     <Route exact path="/Erreur"  component={Erreur}/>
     <Route component={Erreur}/>
     </Switch>

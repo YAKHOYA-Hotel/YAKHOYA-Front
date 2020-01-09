@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { register } from '../Functions/UserFunctions';
 import {Link} from 'react-router-dom';
+import Hero from "../Composants/Hero";
 
 
 export default class CreerCompte extends Component {
@@ -152,7 +153,7 @@ export default class CreerCompte extends Component {
 
                             <div className="createAccount">
                                 <Link to="/Connexion">
-                                <button type="submit">       Créer       </button>
+                                <button type="submit" className="MyButtom">Créer</button>
                                 </Link>
                                 
                                 <Link to="/Connexion">
@@ -164,7 +165,7 @@ export default class CreerCompte extends Component {
                     
              
             </section>
-  
+           
         )
     }
 
