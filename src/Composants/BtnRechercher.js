@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const MyButton = styled.button`
+const BtnRechercher = styled.button`
   
   background: dark;
   color: white;
@@ -11,4 +11,4 @@ const MyButton = styled.button`
   border-radius: 3px;
 `;
 
-export default MyButton;
+export default BtnRechercher;

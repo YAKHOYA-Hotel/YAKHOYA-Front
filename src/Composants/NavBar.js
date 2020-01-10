@@ -42,6 +42,10 @@ export default class NavBar extends Component {
                       <li>
                           <Link to="/Map">Carte</Link>
                       </li>
+
+                      <li>
+                          <Link to="/Apropos">Qui sommes-nous ?</Link>
+                      </li>
                       
                       <li>
                           <Link to="/Connexion">Se connecter</Link>

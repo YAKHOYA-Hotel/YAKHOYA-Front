@@ -20,14 +20,7 @@ export default class TypeChambre extends Component {
             <section className="featured-rooms">
            
                 <Title title="Nos chambres"/>
-                <div className="map-link">
-                  <div>
-                  <Link to="/Map">
-                    <img src={ImgMap} alt="Carte"/>
-                  </Link>
-                  <p className="map-link-p">Sur la carte</p>
-                  </div>
-                </div>
+                
                 <div className="featured-rooms-center" >
                   {loading?<Loading/>:listeChambres}  
                   

@@ -5,6 +5,7 @@ import Banner from '../Composants/Banner';
 import {Link} from 'react-router-dom';
 import Services from '../Composants/Services';
 import TypeChambre from '../Composants/TypeChambre';
+import RechercheA from '../Composants/RechercheA';
 
 
 
@@ -13,22 +14,22 @@ export default function Accueil() {
     return (
         <>
         <Hero>
+            
             <Banner 
             title="YAKHOUYA Hôtels, Paris"
-            subtitle="Chambres simple, double et familiale à partir de 180 €" >
-                
-           <Link to="/Apropos" className="btn-Apropos">Qui sommes-nous ?</Link>
-          
-           
-            
-            </Banner> 
+            subtitle="Chambres simples, doubles, familiales à partir de 180 €" >
+            </Banner>
 
             
+
+            
+
         </Hero>
+
+        <RechercheA/>
+        
     
         <TypeChambre/>
-        
-        
         <Services/>
         </>
     )
