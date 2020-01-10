@@ -154,28 +154,28 @@ export default class Carte extends Component {
         <Marker position={AresEifelposition} icon={this.AresEiffel}>
           <Popup>
           <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">Ares Eiffel</h5> <h5 className="yakhouya-title-A">7 rue du Général de Larminat, 75015 Paris</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <Link to='/DetailHotel/Ares-Eiffel'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
         <Marker position={Almaposition} icon={this.Alma}>
           <Popup>
           <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">Alma</h5> <h5 className="yakhouya-title-A">8 Avenue Rapp, 75007 Paris</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <Link to='/DetailHotel/Alma'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
         <Marker position={SaintLazareposition} icon={this.SaintLazare}>
           <Popup>
           <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">Saint Lazare</h5> <h5 className="yakhouya-title-A">26 Rue d'Amsterdam, 75009 Paris</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <Link to='/DetailHotel/Saint-Lazare'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
         <Marker position={Operaposition} icon={this.Opera}>
           <Popup>
           <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">Opera</h5> <h5 className="yakhouya-title-A">2 rue Monsigny, 75002 Paris</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <Link to='/DetailHotel/Opera'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
@@ -183,42 +183,42 @@ export default class Carte extends Component {
         <Marker position={Montparnasseposition} icon={this.Montparnasse}>
           <Popup>
           <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">Montparnasse</h5> <h5 className="yakhouya-title-A">39 rue de Montparnasse, 75014 Paris</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <Link to='/DetailHotel/Montparnasse'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
         <Marker position={NeuillyMaillotposition} icon={this.NeuillyMaillot}>
           <Popup>
           <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">Neuilly-Maillot</h5> <h5 className="yakhouya-title-A">46 rue de Sablonville, 92200 Neuilly-sur-Seine</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <Link to='/DetailHotel/Neuilly-Maillot'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
         <Marker position={NeuillyEtoileposition} icon={this.NeuillyEtoile}>
           <Popup>
           <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">Neuilly-Etoile</h5> <h5 className="yakhouya-title-A">1 Avenue De Madrid, 92200 Neuilly-sur-Seine</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <Link to='/DetailHotel/Neuilly-Etoile'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
         <Marker position={LaDefenseposition} icon={this.LaDefense}>
           <Popup>
           <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">La Défense</h5> <h5 className="yakhouya-title-A">3 Boulevard de Neuilly, 92081 Courbevoie</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <Link to='/DetailHotel/La-Defense'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
         <Marker position={Puteauxposition} icon={this.Puteaux}>
           <Popup>
           <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">Puteaux Médicis</h5> <h5 className="yakhouya-title-A">2 rue Pierre Curie 92800 Puteaux</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <Link to='/DetailHotel/Puteaux-Medicis'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
         <Marker position={LaVilleteposition} icon={this.LaVillete}>
           <Popup>
-          <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">La Villete</h5> <h5 className="yakhouya-title-A">157 Avenue Jean Jaurès, 75019 Paris</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
-          <Link to='/Accueil'><h6 className="yakhouya-title-L">Détails</h6></Link>
+          <p><h4 className="yakhouya-title-Y">YAKHOUYA PARIS</h4><h5 className="yakhouya-title-H">La Villette</h5> <h5 className="yakhouya-title-A">157 Avenue Jean Jaurès, 75019 Paris</h5><p className="yakhouya-title-P">A partir de 180€ la nuit</p></p>
+          <Link to='/DetailHotel/La-Villette'><h6 className="yakhouya-title-L">Réserver</h6></Link>
           </Popup>
         </Marker>
 
