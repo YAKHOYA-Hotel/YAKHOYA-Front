@@ -2,7 +2,7 @@ import styled from "styled-components";
 import defaultImg from "../images/defaultChambre.jpg";
 
 const StyledHero = styled.header`
-min-height: 40vh;
+min-height: 93vh;
 background: url(${props=>props.img}) center/cover no-repeat;
 display: flex;
 align-items: center;

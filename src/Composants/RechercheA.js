@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import BtnRechercher from '../Composants/BtnRechercher';
 import SelectC from './SelectC';
 import {Link} from 'react-router-dom';
 import ImgMap from '../images/map.png'
@@ -10,25 +9,26 @@ export default class RechercheA extends Component {
         return (
             <div className="recherche-a">
                
-                <h4>Trouver un logement:</h4>
 
                 <article className="arrive-depart">
 
                   <div className="pading">
-                    <label >Type de chambre
-                    <SelectC/>
+                    <label className="recherche-label">Type de chambre
+                    
                     </label>
+                    <SelectC/>
+                    
                     
                   </div>
 
 
                   <div className="pading">
-                    <label><p>Arrivée</p></label>
+                    <label className="recherche-label"><p className="recherche-label">Arrivée</p></label>
                     <input type="date" className="input"/>
                   </div>
                     
                   <div className="pading">
-                    <label><p>Départ</p></label>
+                    <label className="recherche-label"><p className="recherche-label">Départ</p></label>
                     <input type="date" className="input"/>
                   </div>
 

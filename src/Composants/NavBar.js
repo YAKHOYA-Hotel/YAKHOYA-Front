@@ -4,8 +4,9 @@ import {FaAlignRight} from 'react-icons/fa';
 import {FaFacebookSquare} from 'react-icons/fa';
 import {FaInstagram} from 'react-icons/fa';
 import {FaTwitterSquare} from 'react-icons/fa';
-import {FaYoutube} from 'react-icons/fa';
+import {FaUserCircle} from 'react-icons/fa'
 import {Link} from 'react-router-dom';
+
 
 
 
@@ -44,12 +45,19 @@ export default class NavBar extends Component {
                       </li>
 
                       <li>
-                          <Link to="/Apropos">Qui sommes-nous ?</Link>
+                          <Link to="/Apropos">A propos</Link>
                       </li>
                       
-                      <li>
-                          <Link to="/Connexion">Se connecter</Link>
+                      <li className="ico-user">
+                      <FaUserCircle/>
                       </li>
+
+                      <li className="user">
+                          <Link to="/Connexion">Lyes BELKHIRI</Link>
+                      </li>
+
+                      
+
 
                       
                       
@@ -61,8 +69,12 @@ export default class NavBar extends Component {
                               <li className="twitter"><FaTwitterSquare/></li>
                           </ul>
                           </div>
+                          <li className="dec">
+                          <Link to="/Connexion">Déconnexion</Link>
+                         </li>
                       
                 </div>
+                
             </nav>
         )
     }

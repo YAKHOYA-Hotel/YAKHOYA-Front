@@ -238,8 +238,8 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/defaultBcg.jpeg");
-  min-height: 67vh;
+  background-image: url("./images/HotelsHero.jpg");
+  min-height: 35vh;
 }
 
 .chambreHero{
@@ -253,8 +253,9 @@ h6 {
 /* End of Hero */
 /* Banner */
 .banner {
+  width: 98%;
   display: inline-block;
-  background: rgba(0, 1, 20, 0.705);
+  background: rgba(0, 1, 20, 0.561);
   color: var(--mainWhite);
   padding: 2rem 1rem;
   text-align: center;
@@ -929,16 +930,18 @@ input.error {
 
 
 .recherche-a{
-    width: 100%;
+    width: 98%;
     display: inline-block;
-    background: #7e8f8d6b; 
-    color: #7c4800;
+    background: rgba(0, 1, 20, 0.561);
+    color: #fdfdfd;
     padding: 2rem 1rem;
     text-align: center;
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
     align-items: center;
     margin: 1rem,auto;
+    
+    
  
 }
 
@@ -948,6 +951,7 @@ input.error {
   width: 500px;
   margin-right: auto;
   margin-left: auto;
+  
 }
 .arrive-depart{
  
@@ -993,3 +997,60 @@ input.error {
   padding-left: 2px;
 
 }
+.deux-banner{
+  align-items: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+}
+
+.recherche-label{
+  color: #ffffff;
+  
+}
+.select{
+  color: #000000;
+}
+
+.reserver{
+  width: 98%;
+  display: inline-block;
+  background:  rgba(0, 1, 20, 0.561);
+  color: #000000;
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  align-items: center;
+  margin: 1rem,auto;
+  
+  
+}
+
+
+.ico-user{
+  color: #ffffff;
+  margin-top: 0.2rem;
+  font-size: 25px;
+  margin-left: 2rem;
+  margin-right: 0rem;
+  
+}
+.ico-user:hover{
+  color:var(--THNavBar);
+
+}
+.user{
+  margin-left: 0rem;
+  
+}
+.dec{
+  margin-left: auto;
+  font-size: 12px;
+  margin-top: 0.7rem;
+  
+}
+
+

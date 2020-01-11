@@ -62,42 +62,42 @@ export default class Carte extends Component {
 
     AresEiffel = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
     });
     Alma = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
     });
     SaintLazare = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
     });
     Opera = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
     });
     Montparnasse = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
     });
     NeuillyMaillot = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
@@ -105,28 +105,28 @@ export default class Carte extends Component {
 
     LaVillete = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
     });
     Puteaux = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
     });
     LaDefense = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
     });
     NeuillyEtoile = L.icon({
       iconUrl:icon,
-      iconSize:[40,55],
+      iconSize:[45,55],
       iconAnchor:[12.5,41],
       popupAnchor:[5.5,-37]
 
