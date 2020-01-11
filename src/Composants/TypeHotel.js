@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {ChambreContext} from '../context';
 import Loading from './Loading';
-import Chambre from './Chambre';
+import Hotel from './Hotel';
 import Title from './Title';
 import ImgMap from '../images/map.png'
 import { Link } from 'react-router-dom';
@@ -10,19 +10,18 @@ import { Link } from 'react-router-dom';
 export default class TypeChambre extends Component {
     static contextType = ChambreContext;
     render() {
-        let {chambres:listeChambres,loading} = this.context;
+        let {hotels:listeHotels,loading} = this.context;
 
-        listeChambres = listeChambres.map(chambre=>{
-          return <Chambre key={Chambre.id} chambre={chambre} />
+        listeHotels = listeHotels.map(hotel=>{
+          return <Hotel key={Hotel.id} hotel={hotel} />
         })
         return (
 <>
             <section className="featured-rooms">
            
-                <Title title="Nos chambres"/>
-                
+                <Title title="Nos hôtels"/>
                 <div className="featured-rooms-center" >
-                  {loading?<Loading/>:listeChambres}  
+                  {loading?<Loading/>:listeHotels}  
                   
                 </div>
 

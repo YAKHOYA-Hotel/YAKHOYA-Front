@@ -12,6 +12,8 @@ import DetailChambre from './pages/DetailChambre';
 import Connexion from './pages/Connexion';
 import CreerCompte from './pages/CreerCompte';
 import RecupPass from './pages/RecupPass';
+import Map from './pages/Map';
+import DetailHotel from './pages/DetailHotel';
 
 
 import NavBar from './Composants/NavBar';
@@ -29,9 +31,11 @@ function App() {
     <Route exact path="/CreerCompte"  component={CreerCompte}/>
     <Route exact path="/RecupPass"  component={RecupPass}/>
     <Route exact path="/DetailChambre/:slug" component={DetailChambre} />
+    <Route exact path="/DetailHotel/:slug" component={DetailHotel} />
     <Route exact path="/ListeHotels"  component={ListeHotels}/>
     <Route exact path="/ListeHotels/:slug"  component={Hotel}/>
     <Route exact path="/Apropos"  component={Apropos}/>
+    <Route exact path="/Map"  component={Map}/>
     <Route exact path="/Erreur"  component={Erreur}/>
     <Route component={Erreur}/>
     </Switch>

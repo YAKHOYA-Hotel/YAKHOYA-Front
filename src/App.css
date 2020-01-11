@@ -9,7 +9,7 @@
   --THNavBar:#f6ac56;
   --BackNavBar:#010111;
   --IconNavBar:#ffffff;
-  --iconService:#815b13;
+  --iconService:#af9a7d;
  
 
   --primaryColor: #af9a7d;
@@ -140,9 +140,69 @@ h6 {
   font-weight: 500;
   letter-spacing: var(--mainSpacing);
 }
+.links-sociale {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+}
+
+.links-sociale a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: var(--TextNavBar);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: var(--mainSpacing);
+}
+
+.sociale{
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+
+.facebook{
+  color: #ffffff;
+  margin-right: 0.5em;
+  font-size: 1.2rem;
+}
+.facebook:hover {
+  transform: translateY(-10%);
+  color: var(--THNavBar);
+  
+}
+
+.instagram{
+  color: #ffffff;
+  margin-right: 0.5em;
+  font-size: 1.2rem;
+}
+.instagram:hover {
+  transform: translateY(-5%);
+  color: var(--THNavBar);
+}
+
+.twitter{
+  color: #ffffff;
+  margin-right: 0.5em;
+  font-size: 1.2rem;
+}
+.twitter:hover {
+  transform: translateY(-5%);
+  color: var(--THNavBar);
+}
+
+
+
 .nav-links a:hover {
   color: var(--THNavBar);
-  transform: translateY(-10%);
+  transform: translateY(-5%);
 }
 
 .show-nav {
@@ -178,8 +238,8 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/defaultBcg.jpeg");
-  min-height: 67vh;
+  background-image: url("./images/HotelsHero.jpg");
+  min-height: 35vh;
 }
 
 .chambreHero{
@@ -193,8 +253,9 @@ h6 {
 /* End of Hero */
 /* Banner */
 .banner {
+  width: 98%;
   display: inline-block;
-  background: rgba(0, 1, 20, 0.705);
+  background: rgba(0, 1, 20, 0.561);
   color: var(--mainWhite);
   padding: 2rem 1rem;
   text-align: center;
@@ -389,16 +450,27 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
+
+.room-info-adr {
+  background:var(--darkGrey);
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 200;
+  /*letter-spacing: var(--mainSpacing);*/
+  font-size: smaller;
+}
 /* end of room  */
 /* single room*/
 
 .single-room {
   padding: 5rem 0 0 0;
+  align-items: center;
   
 }
 .single-room-images {
-  width: 80vw;
-  margin: 0 auto;
+  width: 90vw;
+  margin: 5px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-row-gap:0.5rem;
@@ -416,7 +488,13 @@ h6 {
 }
 .desc,
 .info {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+}
+
+.info-hotel {
+  margin: 0.5rem 0;
+  width: 10px;
+  height: 10px;
 }
 .desc h3 {
   text-transform: capitalize;
@@ -571,3 +649,408 @@ h6 {
   background: transparent;
   color: var(--primaryColor);
 }
+
+.btn-Compte {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+.btn-Compte:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+
+
+
+
+h1 {
+  text-align: center;
+  width: 100%;
+  color: rgb(218, 123, 0);
+  font-weight: lighter;
+  margin-top: 40px;
+  text-transform: capitalize;
+  font-size: inherit;
+}
+
+.yakhouya-title{
+color: #d37000
+}
+
+.yakhouya-chambre{
+  color: #d37000
+  }
+  .yakhouya-resto{
+    color: #d37000
+    }
+.img-apropos{
+  margin-top: 3rem;
+}
+
+.yakhouya-title-Y{
+  text-align: center;
+  color: #000000;
+  background-color: #d37000;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+  text-transform: capitalize;
+  
+  }
+
+  .yakhouya-title-H{
+    text-align: center;
+    color: #d37000;
+    margin-bottom: 0rem;
+    font-size: 15px;
+    font-family: cursive;
+    
+    
+    }
+
+    .yakhouya-title-A{
+      text-align: center;
+      color: #000000;
+      margin-bottom: 0rem;
+      
+      
+      
+      
+      }
+      .yakhouya-title-P{
+        text-align: center;
+        color: #000000;
+        margin-bottom: 0rem;
+        
+        
+        }
+        .yakhouya-title-L{
+          text-align: center;
+          color: #3111a5;
+          margin-bottom: 0rem;
+          margin-top: 0rem;
+          font-size: 11px;
+          font-style: italic;
+          
+          
+          }
+
+
+label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+input::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.nom {
+  margin-right: 1%;
+}
+
+.prenom {
+  margin-left: 1%;
+}
+
+.email {
+  margin-right: 1%;
+}
+
+.emailC {
+  margin-left: 1%;
+}
+
+.password {
+  margin-right: 1%;
+}
+
+.passwordC {
+  margin-left: 1%;
+}
+
+.firstName,
+.lastName,
+.phone,
+.adresse,
+.ville,
+.codeP,
+.email,
+.emailC,
+.password,
+.passwordC {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.firstName,
+.lastName {
+  width: 49%;
+}
+
+.email,
+.emailC {
+  width: 49%;
+}
+
+.password,
+.passwordC {
+  width: 49%;
+}
+
+.createAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createAccount button {
+  background-color: #c35e00;
+  color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 50px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+.createAccount button:hover {
+  color: #fcfcfc;
+  background-color: #ffb43b;
+ 
+}
+
+.createAccount small {
+  color: #999999;
+  font-weight: lighter;
+}
+
+
+.Compte {
+  width: 40vw;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.small-connexion{
+  color:#3b0606
+}
+
+.map-large{
+  
+  width: 99%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.5, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  
+ }
+
+ .map-large:hover{
+  box-shadow: var(--darkShadow);
+ }
+
+.map-large-m{
+  width: 100%;
+  height: 88vh ;
+ }
+  
+
+
+
+
+.map-link{
+  width: 100%;
+  margin: 0.5rem auto;
+  
+ 
+  
+}
+.map-link-p{
+  background: rgb(255, 255, 255);
+  color: rgb(238, 135, 0);
+  text-transform: capitalize;
+  padding: 0.1rem 0;
+  text-align: center;
+  font-weight: 1000;
+  
+}
+
+.hotel-info-title{
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+
+.hotel-info-text{
+  margin-left: 8rem;
+  margin-right: 8rem;
+  
+}
+
+
+.recherche-a{
+    width: 98%;
+    display: inline-block;
+    background: rgba(0, 1, 20, 0.561);
+    color: #fdfdfd;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+    align-items: center;
+    margin: 1rem,auto;
+    
+    
+ 
+}
+
+.type-logement{
+  
+  margin-bottom: 0rem;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+.arrive-depart{
+ 
+  align-items: center;
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 2rem 1rem;
+  
+ 
+ 
+  
+  
+
+}
+
+
+.btn-primary-r {
+
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1.4rem;
+  height: 37px;
+}
+
+.input{
+  height: 40px;
+  margin-top: 0.2rem;
+}
+
+.type-chambre-label{
+  margin-bottom: 0.3rem;
+}
+
+.pading{
+  padding-right: 2px;
+  padding-left: 2px;
+
+}
+.deux-banner{
+  align-items: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+}
+
+.recherche-label{
+  color: #ffffff;
+  
+}
+.select{
+  color: #000000;
+}
+
+.reserver{
+  width: 98%;
+  display: inline-block;
+  background:  rgba(0, 1, 20, 0.561);
+  color: #000000;
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  align-items: center;
+  margin: 1rem,auto;
+  
+  
+}
+
+
+.ico-user{
+  color: #ffffff;
+  margin-top: 0.2rem;
+  font-size: 25px;
+  margin-left: 2rem;
+  margin-right: 0rem;
+  
+}
+.ico-user:hover{
+  color:var(--THNavBar);
+
+}
+.user{
+  margin-left: 0rem;
+  
+}
+.dec{
+  margin-left: auto;
+  font-size: 12px;
+  margin-top: 0.7rem;
+  
+}
+
+

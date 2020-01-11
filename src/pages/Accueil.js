@@ -1,29 +1,40 @@
 import React from 'react';
 import Hero from '../Composants/Hero';
-import Recherche from '../Composants/Recherche';
 import Banner from '../Composants/Banner';
 import {Link} from 'react-router-dom';
 import Services from '../Composants/Services';
 import TypeChambre from '../Composants/TypeChambre';
+import RechercheA from '../Composants/RechercheA';
+
+
 
 
 export default function Accueil() {
     return (
         <>
         <Hero>
+            <div className="deux-banner">
             <Banner 
             title="YAKHOUYA Hôtels, Paris"
-            subtitle="Chambres simple, double et familiale à partir de 180 €" >
-                
-           <Link to="/Apropos" className="btn-Apropos">Qui somme nous ?</Link>
-          
-           
+            subtitle="Chambres simples, doubles, familiales à partir de 180 €" >
+            </Banner>
             
-            </Banner> 
+            <RechercheA/>
+            
+
+            </div>
 
             
+
+            
+
+            
+
         </Hero>
+
         
+        
+    
         <TypeChambre/>
         <Services/>
         </>
