@@ -11,39 +11,56 @@ export default class CreerCompte extends Component {
         this.state = {
             nom: '',
             prenom: '',
-            adresse: '',
-            ville: '',
-            code_postal: '',
+            username: '',
             password: '',
             password2: '',
             email: '',
-            phone: '',
+            age: '',
         }
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
     }
 
+    
     onChange (e) {
         this.setState({ [e.target.name]: e.target.value })
     }
 
     onSubmit (e) {
         e.preventDefault()
-
+        console.log("je suis dans on submit")
         const user = {
             nom: this.state.nom,
             prenom: this.state.prenom,
             email: this.state.email,
-            adresse: this.state.adresse,
-            ville: this.state.ville,
-            code_postal: this.state.code_postal,
+            username: this.state.username,
             password: this.state.password,
             password2: this.state.password2,
-            phone: this.state.phone
+            age: this.state.age
         }
 
-        register(user).then(res => {
-            this.props.history.push(`/login`)
+        fetch('http://localhost:3030/user',{
+            method: 'POST',
+            body:JSON.stringify(
+                {
+                    name: this.state.nom,
+                    lastname: this.state.prenom,
+                    email: this.state.email,
+                    username: this.state.username,
+                    password: this.state.password,
+                    password2: this.state.password2,
+                    age: this.state.age
+                }
+            ),
+            headers: {"Content-Type": "application/json"}
+        })
+        .then((res)=>{
+            console.log('User Posted: '+ res)
+            this.props.history.push("./Connexion")
+            
+        })
+        .catch((err)=>{
+            console.log(err)
         })
     }
 
@@ -52,7 +69,7 @@ export default class CreerCompte extends Component {
            
             <section className="Compte">
                     <h1 className="h1">Créer un compte</h1>
-                        <form noValidate onSubmit={this.onSubmit}>
+                        <form key="frm" onSubmit={this.onSubmit}>
                            
                             <div>
                                 <label htmlFor="nom">Nom</label>
@@ -66,13 +83,14 @@ export default class CreerCompte extends Component {
 
 
                             <div>
-                                <label htmlFor="prenom">Prenom</label>
+                                <label htmlFor="prenom">Prénom</label>
                                 <input type="text"
                                     className="form-control"
                                     name="prenom"
                                     placeholder=" Prenom"
                                     value={this.state.prenom}
-                                    onChange={this.onChange} />
+                                    onChange={this.onChange} 
+                                />
                             </div>
 
 
@@ -88,48 +106,26 @@ export default class CreerCompte extends Component {
 
 
                             <div>
-                                <label htmlFor="phone">Téléphone</label>
+                                <label htmlFor="age">Age</label>
                                 <input type="text"
                                     className="form-control"
-                                    name="phone"
-                                    placeholder=" Téléphone"
-                                    value={this.state.phone}
+                                    name="age"
+                                    placeholder="Age"
+                                    value={this.state.age}
                                     onChange={this.onChange} />
                             </div>
 
 
                             <div>
-                                <label htmlFor="adresse">Addresse</label>
+                                <label htmlFor="username">Pseudo</label>
                                 <input type="text"
                                     className="form-control"
-                                    name="adresse"
-                                    placeholder="Adresse"
+                                    name="username"
+                                    placeholder="Pseudo"
                                     value={this.state.adresse}
                                     onChange={this.onChange} />
                             </div>
 
-
-                            <div >
-                                <label htmlFor="ville">Ville</label>
-                                <input type="text"
-                                    className="form-control"
-                                    name="ville"
-                                    placeholder="Ville"
-                                    value={this.state.ville}
-                                    onChange={this.onChange} />
-                            </div>
-
-
-                            <div>
-                                <label htmlFor="code_postal">Code Postal</label>
-                                <input type="text" 
-                                    className="form-control"
-                                    name="code_postal"
-                                    placeholder="Code postal"
-                                    value={this.state.code_postal}
-                                    onChange={this.onChange} />
-                            </div>
-                            
                             <div>
                                 <label htmlFor="password">Mot de passe</label>
                                 <input type="password"
@@ -152,9 +148,7 @@ export default class CreerCompte extends Component {
                             </div>
 
                             <div className="createAccount">
-                                <Link to="/Connexion">
                                 <button type="submit" className="MyButtom">Créer</button>
-                                </Link>
                                 
                                 <Link to="/Connexion">
                                 <small>Vous avez déja un compte?</small>
@@ -168,7 +162,4 @@ export default class CreerCompte extends Component {
            
         )
     }
-
-
-    
 }
