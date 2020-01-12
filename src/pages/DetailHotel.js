@@ -21,9 +21,10 @@ export default class DetailHotel extends Component {
 
      this.state={
          slug : this.props.match.params.slug,
-         chambre:'',
-         dateA:'',
-         dateD:'',
+         idClient:'',
+         typeRoom:'',
+         dateEntre:'',
+         dateSortie:'',
          defaultBcg
      };
     }
@@ -31,19 +32,19 @@ export default class DetailHotel extends Component {
     onChangeChambre(e){
         
         this.setState({
-        chambre: e.target.value
+        typeRoom: e.target.value
         });
      }
 
      onChangeDateA(e){
         this.setState({
-            dateA : e.target.value
+            dateEntre : e.target.value
         });
      }
 
      onChangeDateD(e){
         this.setState({
-            dateD : e.target.value
+            dateSortie : e.target.value
         });
      }
 
@@ -136,13 +137,20 @@ export default class DetailHotel extends Component {
                     <div className="select">
                      <Select  
                      defaultValue={options[0]}
-                     onChange={this.onChangeChambre} 
-                     value={this.state.chambre} 
-                     options={options}>
+                     onChange={this.onChangeChambre}
+                     isMulti 
+                     //value={this.state.chambre} 
+                     //options={options}
+                     >
                      </Select>
                     </div>
                     </label>
                    </div>
+
+                   <div className="pading">
+                    <label className="recherche-label"><p className="recherche-label">Type</p></label>
+                    <input type="textArea" className="input" value={this.state.chambre} onChange={this.onChangeChambre}/>
+                  </div>
 
 
                   <div className="pading">

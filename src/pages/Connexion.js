@@ -6,44 +6,99 @@ import MyButton from '../Composants/MyButtom';
 import StyledHero from "../Composants/StyledHero"
 import Hero from "../Composants/Hero"
 import defaultBcg from "../images/defaultBcg.jpeg"
-
+import jwt from 'jsonwebtoken'
+import qs from 'qs'
+import axios from 'axios'
 
 export default class Connexion extends Component {
 
     constructor() {
         super()
         this.state = {
-            email: '',
+            username: '',
             password: '',
         }
-        this.onChange = this.onChange.bind(this)
+        this.onChangeName = this.onChangeName.bind(this)
+        this.onChangePass = this.onChangePass.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
     }
 
-    onChange (e) {
-        this.setState({ [e.target.name]: e.target.value })
+    onChangeName (e) {
+        this.setState({ 
+            username: e.target.value 
+        })
+    }
+
+    onChangePass (e) {
+        this.setState({
+            password: e.target.value
+         })
     }
 
     onSubmit (e) {
-     //   e.preventDefault()
+        e.preventDefault()
 
-      //  const user = {
-      //      email: this.state.email,
-      //      password: this.state.password
-       // }
+        console.log(this.state.username)
+        console.log(this.state.password)
 
-       // login(user).then(res => {
-          //  if (res) {
-           //     if(localStorage.usertoken){
-           //     this.props.history.push(`/profile`)}
-           //     else if(localStorage.admintoken){
-           //     this.props.history.push(`/profileAdmin`)}
-          //  }
-      //  })
+        fetch('http://localhost:3030/user/login',{
+            method: 'POST',
+            body:JSON.stringify(
+                {
+                    username: this.state.username,
+                    password: this.state.password
+                }   
+            ),
+            headers: {"Content-Type": "application/json"}
+        })
+        .then(res=>{
+            return new Promise((resolve,reject)=>{
+                resolve (res.json())
+            })
+        })
+
+        .then((res)=>{
+            localStorage.setItem('usertoken', res.token)
+            
+            const tok = localStorage.getItem('usertoken');
+
+            console.log(res)
+            
+
+            const requestBody = {
+                //token: this.$data.token
+            }
+
+            const config={
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    'Authorization': tok
+                }
+            }
+            console.log(config)
+
+            axios.post('http://127.0.0.1:3030/user/decrypt',qs.stringify(requestBody),config)
+            
+            .then((result)=>{
+                console.log('result')
+                console.log(result.data)
+                localStorage.setItem('name', result.data.name)
+                localStorage.setItem('lastname', result.data.lastname)
+                localStorage.setItem('username', result.data.username)
+                localStorage.setItem('email', result.data.email)                
+                this.props.history.push("./Accueil")
+
+            })
+            .catch((error)=>{
+                alert(error)
+            })            
+        })
+
+        .catch((err)=>{
+            alert(err)
+        })
+        
     }
-
-
-
 
     render () {
         return (
@@ -58,13 +113,13 @@ export default class Connexion extends Component {
 
 
                             <div className="form-group col-md-12 mt-5">
-                                <label htmlFor="email">Email</label>
-                                <input type="email"
+                                <label htmlFor="username">Pseudo</label>
+                                <input type="username"
                                     className="form-control"
-                                    name="email"
-                                    placeholder="E-mail"
-                                    value={this.state.email}
-                                    onChange={this.onChange} />
+                                    name="username"
+                                    placeholder="Pseudo"
+                                    value={this.state.username}
+                                    onChange={this.onChangeName} />
                             </div>
                             <div className="form-group col-md-12 mt-5">
                                 <label htmlFor="password">Mot de passe</label>
@@ -73,16 +128,16 @@ export default class Connexion extends Component {
                                     name="password"
                                     placeholder="Mot de passe"
                                     value={this.state.password}
-                                    onChange={this.onChange} />
+                                    onChange={this.onChangePass} />
                             </div>
                             <div className="createAccount">
                             
                           
                               {/*<button type="submit">Authentification</button>*/}
 
-                                <Link to="/Accueil">
+                                
                                 <button type="submit" className="MyButtom">Authentification</button>
-                                </Link>
+                                
                                 
                                 
                                 <Link to="/RecupPass" className="small-connexion">

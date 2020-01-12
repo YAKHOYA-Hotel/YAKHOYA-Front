@@ -99,11 +99,7 @@ export default class DetailChambre extends Component {
                        </ul>
 
                     </section>
-                    <section className="room-extras">
-                      <h3><FaHotel/> Reserver maintenant</h3> 
-                       
-
-                    </section>
+                    
             </>
         )      
     }
