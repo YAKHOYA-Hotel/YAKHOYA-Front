@@ -17,7 +17,7 @@ export default class DetailHotel extends Component {
         this.onChangeChambre = this.onChangeChambre.bind(this);
         this.onChangeDateA = this.onChangeDateA.bind(this);
         this.onChangeDateD = this.onChangeDateD.bind(this);
-
+        this.onSubmit=this.onSubmit.bind(this)
 
      this.state={
          slug : this.props.match.params.slug,
@@ -30,9 +30,8 @@ export default class DetailHotel extends Component {
     }
 
     onChangeChambre(e){
-        
         this.setState({
-        typeRoom: e.target.value
+          typeRoom: e.target.value
         });
      }
 
@@ -48,28 +47,71 @@ export default class DetailHotel extends Component {
         });
      }
 
+    reserver(e){
+      e.preventDefault();
+      console.log('Je suis dans on submit')
+      const newReservation={
+        idHotel : this.state.slug,
+        typeRoom : this.state.typeRoom,
+        dateEntre : ((this.state.dateEntre).replace('-',',')).replace('-',','),
+        dateSortie : ((this.state.dateSortie).replace('-',',')).replace('-',','),
+        idClient: localStorage.getItem("username")
+      }
+      
+      console.log(newReservation)
+      
+      fetch('http://127.0.0.1:3030/reservation',{
+        method: 'POST',
+        body:JSON.stringify(newReservation),
+        headers: {"Content-Type": "application/json"}
+      })
+      .then((res)=>{
+        return new Promise((resolve,reject)=>{
+            resolve (res.json())
+        })
+      })
 
+      .then((res)=>{
+          console.log(res)
+      })
 
-    // onSubmit(e){
-    //   e.preventDefault();
+      .catch((error)=>{
+        alert("Réservation non posté.")
+      })
 
-    //   const newReservation={
-    //    hotels : this.state.slug,
-    //    chambre : this.state.chambre,
-    //    dateA : this.state.dateA,
-    //    dateD : this.state.dateD
+    }
 
-    //   }
-    
-    //   //je poste la reservation
+    onSubmit(e){
+      e.preventDefault();
+      console.log('Je suis dans on submit')
+      const newReservation={
+        idHotel : this.state.slug,
+        typeRoom : this.state.chambre,
+        dateEntre : this.state.dateA,
+        dateSortie : this.state.dateD,
+        idClient: localStorage.getItem("username")
+      }
+      console.log(newReservation)
+      
+      fetch('http://127.0.0.1:3030/reservation',{
+        method: 'POST',
+        body:JSON.stringify(newReservation),
+        headers: {"Content-Type": "application/json"}
+      })
+      .then((res)=>{
+        return new Promise((resolve,reject)=>{
+            resolve (res.json())
+        })
+      })
 
-    //   this.setState({
-    //       chambre:'',
-    //       dateA:'',
-    //       dateD:''
-    //   })
+      .then((res)=>{
+          console.log(res)
+      })
 
-    // }
+      .catch((error)=>{
+        alert("Réservation non posté.")
+      })
+    }
 
 
 
@@ -155,18 +197,18 @@ export default class DetailHotel extends Component {
 
                   <div className="pading">
                     <label className="recherche-label"><p className="recherche-label">Arrivée</p></label>
-                    <input type="date" className="input" value={this.state.dateA} onChange={this.onChangeDateA}/>
+                    <input type="date" className="input" value={this.state.dateA} onChange={this.onChangeDateA.bind(this)}/>
                   </div>
                     
                   <div className="pading">
                     <label className="recherche-label"><p className="recherche-label">Départ</p></label>
-                    <input type="date" className="input" value={this.state.dateD} onChange={this.onChangeDateD} />
+                    <input type="date" className="input" value={this.state.dateD} onChange={this.onChangeDateD.bind(this)} />
                   </div>
 
                   
                   <div className="pading">
                   
-                    <button type="submit" className="btn-primary-r">Réserver</button>
+                    <button className="btn-primary-r" onClick={this.reserver.bind(this)}>Réserver</button>
                   </div>
                   
                  </article>

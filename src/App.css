@@ -160,7 +160,7 @@ h6 {
 }
 
 .sociale{
-  margin-left: auto;
+  margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
   cursor: pointer;
@@ -206,7 +206,7 @@ h6 {
 }
 
 .show-nav {
-  height: 200px;
+  height: 300px;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -220,7 +220,7 @@ h6 {
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 4rem;
+    margin-left: 3rem;
   }
   .nav-links a {
     margin: 0 1rem;
@@ -1028,26 +1028,25 @@ input.error {
   
   
 }
-
+.user{
+  margin-right: auto;
+}
 
 .ico-user{
   color: #ffffff;
   margin-top: 0.2rem;
   font-size: 25px;
   margin-left: 2rem;
-  margin-right: 0rem;
+  
   
 }
 .ico-user:hover{
   color:var(--THNavBar);
 
 }
-.user{
-  margin-left: 0rem;
-  
-}
+
 .dec{
-  margin-left: auto;
+  margin-right: auto;
   font-size: 12px;
   margin-top: 0.7rem;
   

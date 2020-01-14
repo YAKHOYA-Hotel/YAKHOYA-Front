@@ -85,8 +85,10 @@ export default class Connexion extends Component {
                 localStorage.setItem('name', result.data.name)
                 localStorage.setItem('lastname', result.data.lastname)
                 localStorage.setItem('username', result.data.username)
-                localStorage.setItem('email', result.data.email)                
+                localStorage.setItem('email', result.data.email)
+                //this.props.history.go()              
                 this.props.history.push("./Accueil")
+                window.location.reload()
 
             })
             .catch((error)=>{
@@ -97,6 +99,8 @@ export default class Connexion extends Component {
         .catch((err)=>{
             alert(err)
         })
+
+        
         
     }
 
