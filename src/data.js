@@ -58,12 +58,13 @@ export default [
                size: "Entre 25 et 30 m² ",
                capacity: "Une personne",
                breakfast: "Non inclu",
-               description:"blablabla",
+               description:"Vous êtes à la recherche d’une chambre pour loger à Paris et ses environs? Venez séjourner au sein de Yakhouya Hôtel. Nos chambres simples proposent une norme standard agréable Conçue pour offrir un maximum de confort à un prix avantageux. Elles comprennent un équipement complet intégrant le wifi offert, la TV satellite, le coffre-fort, un service de blanchisserie et de pressing, une salle de bain avec douche et sèche-cheveux, un mini bar et la climatisation Vous apprécierez notre petit déjeuner continental servi en terrasse parfait pour commencer votre journée en faisant le plein d’énergie ! Un micro-onde est également mis à votre disposition dans la salle de petits déjeuners.",
                services: [
-                 "services 1",
-                 "services 2",
-                 "services 3",
-                 "services 4",
+                 "WIFI",
+                 "TV satellite",
+                 "Sèche-cheveux",
+                 "Réfrigérateur",
+                 "Coffre-fort à la réception"
                  
                ],
                images: [
@@ -146,16 +147,14 @@ export default [
     size: "Entre 30 et 35 m² ",
     capacity: "Deux personne",
     breakfast: "Non inclu",
-    description:
-    "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+    description:"Pour un séjour de détente à Paris pour deux personnes, Yakhouya Hôtel vous invite à découvrir ses chambres doubles à deux pas des plus belles plages de Juan les Pins. Nos chambres doubles sont équipées d’un lit double, d’une salle de bain avec baignoire et WC, ainsi que de la climatisation ou d’un ventilateur au plafond. Vous trouverez également tous les équipements indispensables pour un séjour 100% confort : WIFI gratuit, télévision par satellite, sèche-cheveux, mini-bar ou encore coffre- fort. Tous les matins, un petit déjeuner continental vous sera servi dans notre salle de petit déjeuner ou en terrasse, si le temps le permet. L’Hôtel Trianon jouit d’une situation géographique exceptionnelle, à proximité des plages, du Centre des Congrès, de la gare des trains et des boutiques.",
     services: [
-               "Plush pillows and breathable bed linens",
-               "Soft, oversized bath towels",
-               "Full-sized, pH-balanced toiletries",
-               "Complimentary refreshments",
-               "Adequate safety/security",
-               "Internet",
-               "Comfortable beds"
+               "WIFI",
+               "TV satellite",
+               "Sèche-cheveux",
+               "Réfrigérateur",
+               "Coffre-fort à la réception",
+               
              ],
     images: [
 
@@ -236,16 +235,16 @@ export default [
     size: "Entre 40 et 45 m² ",
     capacity: "Quatre personne",
     breakfast: "Non inclu",
-    description:
-    "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+    description:"Dans un cadre chaleureux et une atmosphère raffinée, YakhouyaHôtel vous propose des chambres familiale pouvant accueillir 4 personnes. Leur décoration contemporaine allie charme, confort et élégance. Le chauffage et la climatisation individuels vous permettront d’ajuster à votre convenance la température de la chambre. Toutes les chambres familiales sont équipées  d’un lit double (140×190) et de un à deux lits simples (90×190), d’une penderie et d’un bureau, du double-vitrage, d’un téléviseur à écran plat avec CanalSat et d’un accès WIFI gratuit. Elles disposent d’une grande salle de bain avec baignoire, lavabo et WC. Un petit déjeuner continental peut être servi, sur demande et avec supplément, en chambre. De par leur configuration, elles sont particulièrement appréciées par les familles avec des enfants. 2",
     services: [
-               "Plush pillows and breathable bed linens",
-               "Soft, oversized bath towels",
-               "Full-sized, pH-balanced toiletries",
-               "Complimentary refreshments",
-               "Adequate safety/security",
-               "Internet",
-               "Comfortable beds"
+      "Wifi en chambre gratuit",
+      "Coffre-fort",
+      "Téléphone à lignes multiples",
+      "Lit bébé (sur demande)",
+      "Service de garde d&#39;enfants (en supplement)",
+      "Mini bar",
+      "Peignoirs et chaussons",
+      "Radio/réveil",
              ],
     images: [
 
@@ -327,16 +326,17 @@ export default [
   size: "Entre 50 et 60 m² ",
   capacity: "Deux personne",
   breakfast: "Inclu",
-  description:
-  "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+  description:"Chaque chambre est une scène merveilleuse où se joue la vie parisienne dans toute son élégance. Ainsi, le velours qui habille les intérieurs rappelle le décor classique des grandes salles de la capitale. Des derniers étages, vous êtes aux premières loges pour apprécier le répertoire des plus beaux monuments de Paris : la Tour Eiffel, les verrières du Grand Palais, les flèches de Notre-Dame au loin… Une vue mythique à admirer sous tous les angles, depuis les différentes fenêtres et balcons qui courent tout le long de la façade. Paris dans son plus beau rôle et dans sa plus belle interprétation… Teintes pastel ou plus soutenues, pièces d’antiquité chinées, bar privé, cave à vins dotée de Grands Crus, parquet en point de Hongrie, étoffes précieuses, dressing généreux... L’atmosphère de ces chambres de 60 ou 80 m² est magique et se module au gré des envies grâce à la tablette interactive. Tout en marbre de Carrare, la salle de bains dispose d’une baignoire, d’une douche à l’italienne ainsi que d’une double vasque.",
   services: [
-             "Plush pillows and breathable bed linens",
-             "Soft, oversized bath towels",
-             "Full-sized, pH-balanced toiletries",
-             "Complimentary refreshments",
-             "Adequate safety/security",
-             "Internet",
-             "Comfortable beds"
+             "Wifi en chambre gratuit",
+             "Coffre-fort",
+             "Téléphone à lignes multiples",
+             "Lit bébé (sur demande)",
+             "Service de garde d&#39;enfants (en supplement)",
+             "Mini bar",
+             "Peignoirs et chaussons",
+             "Radio/réveil",
+
            ],
   images: [
 

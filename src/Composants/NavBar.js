@@ -4,9 +4,10 @@ import {FaAlignRight} from 'react-icons/fa';
 import {FaFacebookSquare} from 'react-icons/fa';
 import {FaInstagram} from 'react-icons/fa';
 import {FaTwitterSquare} from 'react-icons/fa';
-import {FaUserCircle} from 'react-icons/fa'
+import {FaUserAlt} from 'react-icons/fa'
 import {Link, withRouter} from 'react-router-dom';
-import { Badge } from 'react-bootstrap';
+
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 
 
 export const didm = tok => {
@@ -17,9 +18,9 @@ export const didm = tok => {
 export default class NavBar extends Component {
     state={
        isOpen:false,
-       nom:'',
-       prenom:'',
-       token:''
+       nom:localStorage.name,
+       prenom:localStorage.lastname,
+       token:localStorage.usertoken
 
     }
     
@@ -57,7 +58,16 @@ export default class NavBar extends Component {
 
 
     handleToggle = () => {
-       this.setState({isOpen:!this.state.isOpen}) 
+        const lnom = localStorage.name
+        const lprenom = localStorage.lastname
+        const ltoken = localStorage.usertoken
+       this.setState({
+           isOpen:!this.state.isOpen,
+           nom:lnom,
+             prenom:lprenom,
+             token:ltoken
+
+        }) 
     }
 
 
@@ -70,7 +80,7 @@ export default class NavBar extends Component {
                    <ul className={this.state.isOpen?"nav-links show-nav":"nav-links"} >
                        
                       <li>
-                          <Link to="/">Accueil</Link>
+                          <Link to="/Accueil">Accueil</Link>
                       </li>
 
                       <li>
@@ -87,16 +97,21 @@ export default class NavBar extends Component {
 
                       
                       
-                      <li className="ico-user">
-                      <FaUserCircle/>
-                      </li>
+                      
+                      
 
                       <li className="user">
-                        <Link to="/Compte"> {this.state.prenom} {this.state.nom} </Link>
+                        <Link to="/Compte"><FaUserAlt/> {this.state.prenom} {this.state.nom} </Link>
                       </li>
 
-                     </ul>
+                      
 
+                     </ul>
+                     <li className="dec">
+
+<Link className="dec"  onClick={this.logOut.bind(this)}>Déc</Link>
+
+</li>
 
                      <div className="sociale">
                         <ul className="nav-links">
@@ -106,11 +121,7 @@ export default class NavBar extends Component {
                         </ul>
                      </div>
 
-                     <li className="dec">
-
-                         <Link tp="/Connexion" onClick={this.logOut.bind(this)}>Déconnexion</Link>
-
-                     </li>
+                     
 
                      </>
 
@@ -122,7 +133,7 @@ export default class NavBar extends Component {
                    <ul className={this.state.isOpen?"nav-links show-nav":"nav-links"} >
                        
                       <li>
-                          <Link to="/">Accueil</Link>
+                          <Link to="/Accueil">Accueil</Link>
                       </li>
 
                       <li>
@@ -165,7 +176,20 @@ export default class NavBar extends Component {
             <nav className="navbar">
                 <div className="nav-center">
                    <div className="nav-header">
-                     <Link to="/">
+                
+
+                   {/* drawer */}
+
+                   
+            
+        
+
+
+
+
+                    {/* drawer */}
+
+                     <Link to="/Accueil">
                       <img src={logo} alt="YAKHOUYA"  width='155px'  />  
                      </Link>
 
@@ -174,7 +198,7 @@ export default class NavBar extends Component {
                      </button>
                    </div>
 
-                   {localStorage.usertoken?connecte:nonConnecte}
+                   {(localStorage.usertoken)? connecte : nonConnecte}
 
                      
                       

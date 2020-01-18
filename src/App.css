@@ -160,7 +160,7 @@ h6 {
 }
 
 .sociale{
-  margin-left: auto;
+  margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
   cursor: pointer;
@@ -206,7 +206,7 @@ h6 {
 }
 
 .show-nav {
-  height: 200px;
+  height: 300px;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -220,7 +220,7 @@ h6 {
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 4rem;
+    margin-left: 3rem;
   }
   .nav-links a {
     margin: 0 1rem;
@@ -1028,29 +1028,98 @@ input.error {
   
   
 }
-
+.user{
+  margin-right: auto;
+}
 
 .ico-user{
   color: #ffffff;
   margin-top: 0.2rem;
   font-size: 25px;
   margin-left: 2rem;
-  margin-right: 0rem;
+  
   
 }
 .ico-user:hover{
   color:var(--THNavBar);
 
 }
-.user{
-  margin-left: 0rem;
-  
-}
+
 .dec{
-  margin-left: auto;
+  margin-right: auto;
   font-size: 12px;
   margin-top: 0.7rem;
   
+}
+
+.landing-grid{
+  background: #649173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align: center;
+display: flex;
+
+}
+
+.avatar-img{
+  height: 400px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+}
+
+.cell-info{
+  display:list-item;
+}
+
+.info-compte-text{
+  background-color: black;
+  opacity: .4;
+  width: 90%;
+margin-top: 7rem;
+margin-left: auto;
+margin-right: auto;
+  border-radius: 10px;
+  height: 200px;
+  
+
+}
+
+.info-compte-text h2{
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+
+}
+
+
+.info-compte-text h6{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+ 
+
+}
+
+.cell-1{
+  width: 25%;
+}
+
+.cell-2{
+  width: 75%;
+}
+
+.reservation-user{
+  width: 80%;
+  margin:auto
+}
+
+.reservation-user h3{
+ text-align: center;
+ margin :auto;
+ margin-top: 3rem;
 }
 
 

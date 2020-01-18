@@ -14,6 +14,7 @@ import CreerCompte from './pages/CreerCompte';
 import RecupPass from './pages/RecupPass';
 import Map from './pages/Map';
 import DetailHotel from './pages/DetailHotel';
+import Compte from './pages/Compte'
 
 
 import NavBar from './Composants/NavBar';
@@ -25,10 +26,11 @@ function App() {
     <>
     <NavBar/>
     <Switch>
-    <Route exact path="/"  component={Accueil}/>
+    <Route exact path="/"  component={Connexion}/>
     <Route exact path="/Accueil"  component={Accueil}/>
     <Route exact path="/Connexion"  component={Connexion}/>
     <Route exact path="/CreerCompte"  component={CreerCompte}/>
+    <Route exact path="/Compte"  component={Compte}/>
     <Route exact path="/RecupPass"  component={RecupPass}/>
     <Route exact path="/DetailChambre/:slug" component={DetailChambre} />
     <Route exact path="/DetailHotel/:slug" component={DetailHotel} />
