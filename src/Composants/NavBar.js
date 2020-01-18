@@ -80,7 +80,7 @@ export default class NavBar extends Component {
                    <ul className={this.state.isOpen?"nav-links show-nav":"nav-links"} >
                        
                       <li>
-                          <Link to="/">Accueil</Link>
+                          <Link to="/Accueil">Accueil</Link>
                       </li>
 
                       <li>
@@ -104,8 +104,14 @@ export default class NavBar extends Component {
                         <Link to="/Compte"><FaUserAlt/> {this.state.prenom} {this.state.nom} </Link>
                       </li>
 
-                     </ul>
+                      
 
+                     </ul>
+                     <li className="dec">
+
+<Link className="dec"  onClick={this.logOut.bind(this)}>Déc</Link>
+
+</li>
 
                      <div className="sociale">
                         <ul className="nav-links">
@@ -115,11 +121,7 @@ export default class NavBar extends Component {
                         </ul>
                      </div>
 
-                     <li className="dec">
-
-                         <Link className="dec"  onClick={this.logOut.bind(this)}>Déc</Link>
-
-                     </li>
+                     
 
                      </>
 
@@ -131,7 +133,7 @@ export default class NavBar extends Component {
                    <ul className={this.state.isOpen?"nav-links show-nav":"nav-links"} >
                        
                       <li>
-                          <Link to="/">Accueil</Link>
+                          <Link to="/Accueil">Accueil</Link>
                       </li>
 
                       <li>
@@ -187,7 +189,7 @@ export default class NavBar extends Component {
 
                     {/* drawer */}
 
-                     <Link to="/">
+                     <Link to="/Accueil">
                       <img src={logo} alt="YAKHOUYA"  width='155px'  />  
                      </Link>
 

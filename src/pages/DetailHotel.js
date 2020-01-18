@@ -14,7 +14,7 @@ export default class DetailHotel extends Component {
         super(props)
 
 
-        this.onChangeChambre = this.onChangeChambre.bind(this);
+       //this.onChangeChambre = this.onChangeChambre.bind(this);
         this.onChangeDateA = this.onChangeDateA.bind(this);
         this.onChangeDateD = this.onChangeDateD.bind(this);
         this.onSubmit=this.onSubmit.bind(this)
@@ -30,8 +30,9 @@ export default class DetailHotel extends Component {
     }
 
     onChangeChambre(e){
+      console.log("event",e.value)
         this.setState({
-          typeRoom: e.target.value
+          typeRoom: e.value
         });
      }
 
@@ -179,20 +180,20 @@ export default class DetailHotel extends Component {
                     <div className="select">
                      <Select  
                      defaultValue={options[0]}
-                     onChange={this.onChangeChambre}
-                     isMulti 
-                     //value={this.state.chambre} 
-                     //options={options}
+                     onChange={this.onChangeChambre.bind(this)}
+                     //isMulti 
+                     value={this.state.chambre} 
+                     options={options}
                      >
                      </Select>
                     </div>
                     </label>
                    </div>
 
-                   <div className="pading">
+                   {/* <div className="pading">
                     <label className="recherche-label"><p className="recherche-label">Type</p></label>
                     <input type="textArea" className="input" value={this.state.chambre} onChange={this.onChangeChambre}/>
-                  </div>
+                  </div> */}
 
 
                   <div className="pading">

@@ -17,7 +17,7 @@ export default class SelectC extends Component {
                     <div className="select">
                      <Select
                        closeMenuOnSelect={false}
-                       defaultValue={[options[0], options[1]]}
+                       defaultValue={[options[0]]}
                        isMulti
                        options={options}
                       // onChange={this.onChangeChambre}

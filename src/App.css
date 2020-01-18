@@ -1052,4 +1052,74 @@ input.error {
   
 }
 
+.landing-grid{
+  background: #649173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align: center;
+display: flex;
+
+}
+
+.avatar-img{
+  height: 400px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+}
+
+.cell-info{
+  display:list-item;
+}
+
+.info-compte-text{
+  background-color: black;
+  opacity: .4;
+  width: 90%;
+margin-top: 7rem;
+margin-left: auto;
+margin-right: auto;
+  border-radius: 10px;
+  height: 200px;
+  
+
+}
+
+.info-compte-text h2{
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+
+}
+
+
+.info-compte-text h6{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+ 
+
+}
+
+.cell-1{
+  width: 25%;
+}
+
+.cell-2{
+  width: 75%;
+}
+
+.reservation-user{
+  width: 80%;
+  margin:auto
+}
+
+.reservation-user h3{
+ text-align: center;
+ margin :auto;
+ margin-top: 3rem;
+}
+
 
